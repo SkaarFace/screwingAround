@@ -1,0 +1,35 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "base";
+
+.mainButton
+{
+	width: 27%;
+	border: 2px solid $mainColor;
+	@include box-shadow($shadowColor 2px 2px 5px);
+	background-color: #99acbc; // Old browsers
+	@include filter-gradient(#99acbc, #124065, vertical); // IE6-9
+	@include background-image(linear-gradient(top, $buttonTop 0%,  desaturate(lighten($mainColor, 38%) ,60%) 15%,
+		desaturate(lighten($mainColor, 15%) ,20%) 50%,$mainColor 100%));
+
+	p, span
+	{
+		float: left;
+		font-family: Arial;
+		font-size: 1.5em;
+		color: white;
+		padding-top: .5em;
+		margin-left: .5em;
+		padding-bottom: .5em;
+	}
+
+	span
+	{
+		float: right;
+		margin-right: .5em;
+	}
+
+}

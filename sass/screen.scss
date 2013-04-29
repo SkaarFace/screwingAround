@@ -10,8 +10,8 @@
 	width: 27%;
 	border: 2px solid $mainColor;
 	@include box-shadow($shadowColor 2px 2px 5px);
-	background-color: #99acbc; // Old browsers
-	@include filter-gradient(#99acbc, #124065, vertical); // IE6-9
+	background-color: $mainColor; // Old browsers
+	@include filter-gradient($buttonTop, $mainColor, vertical); // IE6-9
 	@include background-image(linear-gradient(top, $buttonTop 0%,  desaturate(lighten($mainColor, 38%) ,60%) 15%,
 		desaturate(lighten($mainColor, 15%) ,20%) 50%,$mainColor 100%));
 
@@ -32,4 +32,37 @@
 		margin-right: .5em;
 	}
 
+}
+
+.button
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	@include button($buttonColor);
+	color: white;
+	font-size: 1.5em;
+	font-family: Arial;
+	padding: .5em;
+
+	p
+	{
+		text-align: center;
+	}
+}
+
+.sideBox
+{
+	width: 27%;
+	border: 2px solid $mainColor;
+	@include box-shadow($shadowColor 2px 2px 5px);
+	background-color: rgb(210,213,217); // Old browsers
+	@include filter-gradient(#d2d5d9, #d2d5d9, vertical); // IE6-9
+	@include background-image(linear-gradient(top, rgba(210,213,217,1) 0%,rgba(210,218,224,1) 51%,rgba(210,213,217,1) 100%));
+	
+	.button
+	{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
 }

@@ -175,7 +175,7 @@ nav a {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background-color: #cddcea;
+  background-color: white;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCDDCEA', endColorstr='#FFB1C4D6');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(205, 220, 234, 0.8)), color-stop(100%, rgba(177, 196, 214, 0.8)));
@@ -200,41 +200,45 @@ nav a:hover {
     background-color: #cddcea;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCDDCEA', endColorstr='#FFB1C4D6');
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #cddcea), color-stop(70%, #b1c4d6));
-    background-image: -webkit-linear-gradient(top, #cddcea 30%, #b1c4d6 70%);
-    background-image: -moz-linear-gradient(top, #cddcea 30%, #b1c4d6 70%);
-    background-image: -o-linear-gradient(top, #cddcea 30%, #b1c4d6 70%);
-    background-image: linear-gradient(top, #cddcea 30%, #b1c4d6 70%);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(205, 220, 234, 0.8)), color-stop(70%, rgba(177, 196, 214, 0.8)));
+    background-image: -webkit-linear-gradient(top, rgba(205, 220, 234, 0.8) 30%, rgba(177, 196, 214, 0.8) 70%);
+    background-image: -moz-linear-gradient(top, rgba(205, 220, 234, 0.8) 30%, rgba(177, 196, 214, 0.8) 70%);
+    background-image: -o-linear-gradient(top, rgba(205, 220, 234, 0.8) 30%, rgba(177, 196, 214, 0.8) 70%);
+    background-image: linear-gradient(top, rgba(205, 220, 234, 0.8) 30%, rgba(177, 196, 214, 0.8) 70%);
     float: left;
     border-bottom: 0;
     border-right: 1px solid #0b3860;
   }
-
   /* line 87, ../sass/_navstyles.scss */
+  nav a:hover {
+    background-color: #365d82;
+  }
+
+  /* line 92, ../sass/_navstyles.scss */
   nav ul li:first-child a {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
   }
 
-  /* line 92, ../sass/_navstyles.scss */
+  /* line 97, ../sass/_navstyles.scss */
   nav ul li:last-child a {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
 }
-/* line 98, ../sass/_navstyles.scss */
+/* line 103, ../sass/_navstyles.scss */
 nav ul ul a {
   background: #ca3716;
   padding-left: 2em;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 104, ../sass/_navstyles.scss */
+  /* line 109, ../sass/_navstyles.scss */
   nav ul ul a {
     display: none;
   }
 }
-/* line 109, ../sass/_navstyles.scss */
+/* line 114, ../sass/_navstyles.scss */
 nav-toggle {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -250,7 +254,7 @@ nav-toggle {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  /* line 124, ../sass/_navstyles.scss */
+  /* line 129, ../sass/_navstyles.scss */
   nav-toggle {
     background-image: url("../img/hamburger-retina.gif");
     -webkit-background-size: 100px 100px;

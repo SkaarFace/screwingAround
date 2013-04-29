@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-arrow-right-alt1, .icon-rss-alt, .icon-rss, .icon-play-alt, .icon-map-pin-stroke, .icon-left-quote, .icon-right-quote, .icon-left-quote-alt, .icon-right-quote-alt, .icon-checkmark, .icon-cancel, .icon-facebook, .icon-twitter, .icon-blogger, .icon-mail, .icon-mail-2, .icon-mail-3, .icon-linkedin, .icon-menu, .icon-envelop {
+.icon-arrow-right-alt1, .icon-rss-alt, .icon-rss, .icon-play-alt, .icon-map-pin-stroke, .icon-left-quote, .icon-right-quote, .icon-left-quote-alt, .icon-right-quote-alt, .icon-checkmark, .icon-cancel, .icon-facebook, .icon-twitter, .icon-blogger, .icon-mail, .icon-mail-2, .icon-mail-3, .icon-linkedin, .icon-menu, .icon-envelop, .icon-phone {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -96,4 +96,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon-envelop:before {
 	content: "\e013";
+}
+.icon-phone:before {
+	content: "\e014";
 }

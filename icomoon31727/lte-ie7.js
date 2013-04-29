@@ -25,7 +25,8 @@ window.onload = function() {
 			'icon-mail-3' : '&#xe010;',
 			'icon-linkedin' : '&#xe011;',
 			'icon-menu' : '&#xe012;',
-			'icon-envelop' : '&#xe013;'
+			'icon-envelop' : '&#xe013;',
+			'icon-phone' : '&#xe014;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, html, c, el;

@@ -9,8 +9,7 @@
 }
 
 #nav li {
-  width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 .js #nav {

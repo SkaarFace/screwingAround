@@ -1,15 +1,24 @@
+$mainColor : hsl(208, 80, 21);
+$buttonTop: hsl(207, 22, 67);
+$shadowColor: rgba(0, 0, 0, .5);
+$buttonColor: #5c687c;
+$sideColor: #b7c4cf;
+$sideColorTop: #d3d6da;
+$navTop: #cddcea;
+$navBottom: #b1c4d6;
+$navTextColor: #336796;
+$navBorderRadius: 15px;
+$mainContentColorBottom: #8da2b3;
+$mainContentColorTop: white;
+$footerTextColor: white;
+$unselected: #a8bed3;
+$selected: white;
+
 @import "compass/reset";
 @import "compass";
 @import "clearfix";
 @import "mixins";
 @import "navstyles";
-
-$mainColor : hsl(208, 80, 21);
-$buttonTop: hsl(207, 22, 67);
-$shadowColor: rgba(0, 0, 0, .4);
-$buttonColor: #5c687c;
-$sideColor: #b7c4cf;
-$sideColorTop: #d3d6da;
 
 @font-face {
 	font-family: 'icomoon';

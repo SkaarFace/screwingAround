@@ -10,38 +10,98 @@
 	<!--[if IE]>
 		<link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<![endif]-->
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	<script src="./js/responsive-nav.js"></script>
 </head>
 
 <body>
-
-    <div id="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+    
+    <header>
+    <div id = "headContainer" class="clearfix">
+        <img id="logo" src = "./img/logo.png" />
+        <div id= "socialLinks">
+            <ul>
+                <li><a href="#"><span id ="facebook" data-icon="&#xe00b;" aria-hidden="true"></span></a></li>
+                <li><a href="#"><span id = "in" data-icon="&#xe011;" aria-hidden="true"></span></a></li>
+                <li><a href="#"><span id = "blog" data-icon="&#xe00d;" aria-hidden="true"></span></a></li>
+                <li><a href="#"><span id = "twitter" data-icon="&#xe00c;" aria-hidden="true"></span></a></li>
+            </ul>
+        </div>
+        <nav>
+        <div id = "#nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        </nav>
     </div>
+    </header>
 
-	<div class = "mainButton clearfix">
-		<p>
-		This is a button.
-		</p>
-		<span data-icon="&#xe003;" aria-hidden="true">
-		</span>
-	</div>
+    <section>
+        <div id = "mainContent">
+            
+            <div id = "mainImage">
+                <img src="./img/mainImage.png" />
+            </div>
 
-	<div class = "sideBox">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, id blanditiis tenetur corrupti molestias numquam ea fugit autem aliquid obcaecati. Veritatis, in, iusto magnam odit accusamus repudiandae iure deserunt animi!
-		</p>
-		<div class = "button">
-			<p>
-				Direct Hire Form
-			</p>
-		</div>
-	</div>
+            <aside>
+                <ul>
+                    <li class="mainButton">
+                        <a href="#">Employers</a>
+                    </li>
+                    <li class="mainButton">
+                        <a href="#">Job Seekers</a>
+                    </li>
+                    <li class="mainButton">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </aside>
+
+        	<aside>
+                <div class = "sideBox">
+            		<p>
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, id blanditiis tenetur corrupti molestias numquam ea fugit autem aliquid obcaecati. Veritatis, in, iusto magnam odit accusamus repudiandae iure deserunt animi!
+            		</p>
+            		<div class = "button">
+            			<p>
+            				Direct Hire Form
+            			</p>
+            		</div>
+                </div>
+        	</aside>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="address">
+            <span data-icon="&#xe004;" aria-hidden="true"></span>
+            <p><em>Visit</em></br>
+                300 E Ash Lane</br>
+                Euless, TX, 76039</p>
+        </div>
+        <div id="contact">
+            <p><em>Contact</em></br>
+                contact@jacksonarchrecruiting.com</p>
+            <div id= "socialLinksBottom">
+                <ul>
+                    <li><a href="#"><span id ="facebookBottom" data-icon="&#xe00b;" aria-hidden="true"></span></a></li>
+                    <li><a href="#"><span id = "inBottom" data-icon="&#xe011;" aria-hidden="true"></span></a></li>
+                    <li><a href="#"><span id = "blogBottom" data-icon="&#xe00d;" aria-hidden="true"></span></a></li>
+                    <li><a href="#"><span id = "twitterBottom" data-icon="&#xe00c;" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="phone"><span data-icon="&#xe014;"></span>
+            <p><em>Call</em></br>
+                Staffing: 917.907.3335</br>
+                HR: 917.581.6217</p>
+        </div>
+    </footer>
 
     <script>
       var navigation = responsiveNav("#nav", {

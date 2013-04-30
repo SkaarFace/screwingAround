@@ -32,9 +32,62 @@ footer
 	width: 100%;
 	color: $footerTextColor;
 	background-color: $mainColor;
+	#footerContent
+	{
+		margin: 0 auto;
+		margin-top: 2em;
+		max-width: 960px;
+		font-size: .8em;
+		font-weight: 0;
+	}
+	#address
+	{
+		#mapMarker
+		{
+			font-size: 2em;
+			width:5%;
+			margin-right: .5em;
+			float:left;
+
+		}
+		width: 100%;
+		margin-top: .25em;
+		margin-bottom: .25em;
+	}
+	#contact
+	{
+		#envelope
+		{
+			font-size: 2em;
+			width:5%;
+			float:left;
+			margin-right: .5em;
+
+		}
+		float: left;
+		width: 100%;
+		margin-top: .25em;
+		margin-bottom: .25em;
+	}
+	#phone
+	{
+		#phoneIcon
+		{
+			font-size: 2em;
+			width:5%;
+			float:left;
+			margin-right: .5em;
+		}
+		float: left;
+		width: 100%;
+		margin-top: .25em;
+		margin-bottom: .25em;
+	}
+
 	#socialLinksBottom
 	{
 		width: 100%;
+		font-size: 1.5em;
 		li
 		{
 			display: inline-block;
@@ -109,13 +162,20 @@ footer
 	}
 }
 
-#mainContent
+#mainContentBackground
 {
-	padding-top: 1em;
-	padding-bottom: .5em;
 	background-color: $mainContentColorBottom; // Old browsers
 	@include filter-gradient($mainContentColorTop, $mainContentColorBottom, vertical); // IE6-9
 	@include background-image(linear-gradient(top, $mainContentColorTop 0%, $mainContentColorBottom 95%));
+}
+
+#mainContent
+{
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	width: 100%;
+	max-width: 960px;
 }
 
 .mainButton
@@ -138,7 +198,7 @@ footer
 		padding-bottom: .5em;
 		@include box-shadow($shadowColor 2px 2px 5px);
 		@include box-shadow($shadowColor 2px 2px 5px);
-		background-color: lighten($mainColor, 20%); // Old browsers
+		background-color: $mainColor; // Old browsers
 		@include filter-gradient($buttonTop, $mainColor, vertical); // IE6-9
 		@include background-image(linear-gradient(top, rgba($buttonTop, .8) 0%,  rgba(desaturate(lighten($mainColor, 38%) ,60%), .8) 15%,
 			rgba(desaturate(lighten($mainColor, 15%) ,20%), .8) 50%, rgba($mainColor, .8) 100%));
@@ -146,7 +206,7 @@ footer
 		&:hover
 		{
 			color: $selected;
-			background-color: $mainColor;
+			background-color: lighten($mainColor, 20%);
 		}
 	}
 
@@ -192,7 +252,7 @@ footer
 	@include filter-gradient(#d2d5d9, #d2d5d9, vertical); // IE6-9
 	@include background-image(linear-gradient(top, rgba(210,213,217,1) 0%,rgba(210,218,224,1) 51%,rgba(210,213,217,1) 100%));
 	
-	.button
+	.button, p
 	{
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -201,6 +261,36 @@ footer
 
 @media screen and (min-width: 40em)
 {
+
+	footer
+	{
+		#address
+		{
+			width: 33%;
+		}
+
+		#contact
+		{
+			width: 33%;
+		}
+
+		#phone
+		{
+			width: 33%;
+		}
+	}
+
+	#rightSide
+	{
+		width: 35%;
+		float: right;
+	}
+
+	#mainImage
+	{
+		width: 60%;
+		float: left;
+	}
 
 	#mainContent
 	{

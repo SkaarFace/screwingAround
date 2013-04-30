@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="./css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="./css/print.css" media="print" rel="stylesheet" type="text/css" />
-	<link rel = "stylesheet" href="./css/responsive-nav.css">
 	<!--[if IE]>
 		<link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<![endif]-->
@@ -39,82 +38,69 @@
     </header>
 
     <section>
-        <div id = "mainContent">
-            
-            <div id = "mainImage">
-                <img src="./img/mainImage.png" />
-            </div>
-
-            <aside>
-                <ul>
-                    <li class="mainButton">
-                        <a href="#">Employers</a>
-                    </li>
-                    <li class="mainButton">
-                        <a href="#">Job Seekers</a>
-                    </li>
-                    <li class="mainButton">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </aside>
-
-        	<aside>
-                <div class = "sideBox">
-            		<p>
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, id blanditiis tenetur corrupti molestias numquam ea fugit autem aliquid obcaecati. Veritatis, in, iusto magnam odit accusamus repudiandae iure deserunt animi!
-            		</p>
-            		<div class = "button">
-            			<p>
-            				Direct Hire Form
-            			</p>
-            		</div>
+        <div id = "mainContentBackground">
+            <div id = "mainContent" class = "clearfix">
+                <div id = "mainImage">
+                    <img src="./img/mainImage.png" />
                 </div>
-        	</aside>
+
+                <aside id = "rightSide">
+                    <div id = "buttonList">
+                        <ul>
+                            <li class="mainButton">
+                                <a href="#">Employers</a>
+                            </li>
+                            <li class="mainButton">
+                                <a href="#">Job Seekers</a>
+                            </li>
+                            <li class="mainButton">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                	<div id = "sideBox" class = "sideBox">
+                    		<p>
+                    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, id blanditiis tenetur corrupti molestias numquam ea fugit autem aliquid obcaecati. Veritatis, in, iusto magnam odit accusamus repudiandae iure deserunt animi!
+                    		</p>
+                    		<div class = "button">
+                    				Direct Hire Form
+                    		</div>
+                	</div>
+                </aside>
+            </div>
         </div>
 
     </section>
 
-    <footer>
-        <div id="address">
-            <span data-icon="&#xe004;" aria-hidden="true"></span>
-            <p><em>Visit</em></br>
-                300 E Ash Lane</br>
-                Euless, TX, 76039</p>
-        </div>
-        <div id="contact">
-            <p><em>Contact</em></br>
-                contact@jacksonarchrecruiting.com</p>
-            <div id= "socialLinksBottom">
-                <ul>
-                    <li><a href="#"><span id ="facebookBottom" data-icon="&#xe00b;" aria-hidden="true"></span></a></li>
-                    <li><a href="#"><span id = "inBottom" data-icon="&#xe011;" aria-hidden="true"></span></a></li>
-                    <li><a href="#"><span id = "blogBottom" data-icon="&#xe00d;" aria-hidden="true"></span></a></li>
-                    <li><a href="#"><span id = "twitterBottom" data-icon="&#xe00c;" aria-hidden="true"></span></a></li>
-                </ul>
+    <footer class = "cleafix">
+        <div id = "footerContent">
+            <div id="address">
+                <span id ="mapMarker" data-icon="&#xe004;" aria-hidden="true"></span>
+                <p><em>Visit</em></br>
+                    300 E Ash Lane</br>
+                    Euless, TX, 76039</p>
+            </div>
+            <div id="contact">
+                <span id ="envelope" data-icon="&#xe013;" aria-hidden="true"></span>
+                <p><em>Contact</em></br>
+                    contact@jacksonarchrecruiting.com</p>
+                <div id= "socialLinksBottom">
+                    <ul>
+                        <li><a href="#"><span id ="facebookBottom" data-icon="&#xe00b;" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span id = "inBottom" data-icon="&#xe011;" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span id = "blogBottom" data-icon="&#xe00d;" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span id = "twitterBottom" data-icon="&#xe00c;" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="phone"><span id = "phoneIcon" data-icon="&#xe014;"></span>
+                <p><em>Call</em></br>
+                    Staffing: 917.907.3335</br>
+                    HR: 917.581.6217</p>
             </div>
         </div>
-        <div id="phone"><span data-icon="&#xe014;"></span>
-            <p><em>Call</em></br>
-                Staffing: 917.907.3335</br>
-                HR: 917.581.6217</p>
-        </div>
     </footer>
-
-    <script>
-      var navigation = responsiveNav("nav", {
-        animate: true,        // Boolean: Use CSS3 transitions, true or false
-        transition: 400,      // Integer: Speed of the transition, in milliseconds
-        label: "Menu",        // String: Label for the navigation toggle
-        insert: "after",      // String: Insert the toggle before or after the navigation
-        customToggle: "",     // Selector: Specify the ID of a custom toggle
-        openPos: "relative",  // String: Position of the opened nav, relative or static
-        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
-        init: function(){},   // Function: Init callback
-        open: function(){},   // Function: Open callback
-        close: function(){}   // Function: Close callback
-      });
-    </script>
 
 </body>
 </html>

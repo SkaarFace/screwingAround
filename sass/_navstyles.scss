@@ -78,7 +78,7 @@ nav a {
     padding: .5em;
     background-color: $navTop; // Old browsers
     @include filter-gradient($navTop, $navBottom, vertical); // IE6-9
-    @include background-image(linear-gradient(top, rgba($navTop, .8) 30%, rgba($navBottom, .8) 70%));
+    @include background-image(linear-gradient(top, rgba($navTop, .8) 50%, rgba($navBottom, .8) 50%));
     float: left;
     border-bottom: 0;
     border-right: 1px solid $mainColor;

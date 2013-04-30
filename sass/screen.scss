@@ -12,6 +12,11 @@ body
 	background-color: $mainColor;
 }
 
+a
+{
+	@include transition-duration(.5s);
+}
+
 #logo
 {
 	width: 100%;
@@ -20,7 +25,8 @@ body
 header
 {
 	width: 100%;
-	padding: .4em;
+	padding-top: .4em;
+	padding-bottom: .4em;
 	border-bottom: 20px solid $mainColor;
 	margin-bottom: 1em;
 	@include box-sizing(border-box);
@@ -36,49 +42,37 @@ footer
 	{
 		margin: 0 auto;
 		margin-top: 2em;
-		max-width: 960px;
+		width: 100%;
 		font-size: .8em;
 		font-weight: 0;
-	}
-	#address
-	{
-		#mapMarker
+		em
 		{
-			font-size: 2em;
-			width:5%;
-			margin-right: .5em;
-			float:left;
+			font-weight: bold;
+		}
 
-		}
-		width: 100%;
-		margin-top: .25em;
-		margin-bottom: .25em;
-	}
-	#contact
-	{
-		#envelope
+		p
 		{
-			font-size: 2em;
-			width:5%;
-			float:left;
-			margin-right: .5em;
-
+			text-align:left;
 		}
-		float: left;
-		width: 100%;
-		margin-top: .25em;
-		margin-bottom: .25em;
-	}
-	#phone
-	{
-		#phoneIcon
+		a
 		{
-			font-size: 2em;
-			width:5%;
-			float:left;
-			margin-right: .5em;
+			text-decoration: none;
+			color: $footerTextColor;
+			&:hover
+			{
+				color: $mainContentColorBottom;
+			}
 		}
-		float: left;
+	}
+	.bottomItem
+	{
+		.icon
+		{
+			font-size: 3em;
+			width:5%;
+			margin-right: 1em;
+			float: left;
+		}
 		width: 100%;
 		margin-top: .25em;
 		margin-bottom: .25em;
@@ -88,6 +82,8 @@ footer
 	{
 		width: 100%;
 		font-size: 1.5em;
+		text-align: left;
+		padding-top: .2em;
 		li
 		{
 			display: inline-block;
@@ -95,22 +91,38 @@ footer
 			{
 				text-decoration: none;
 				color: $footerTextColor;
+				&:hover
+				{
+					color: $mainContentColorBottom;
+				}
 			}
 			#facebookBottom
 			{
-				color: $footerTextColor;
+				&:hover
+				{
+					color: #395499;
+				}
 			}
 			#inBottom
 			{
-				color: $footerTextColor;
+				&:hover
+				{
+					color: #0f649c;
+				}
 			}
 			#blogBottom
 			{
-				color: $footerTextColor;
+				&:hover
+				{
+					color: #f58000;
+				}
 			}
 			#twitterBottom
 			{
-				color: $footerTextColor;
+				&:hover
+				{
+					color: #48c8f6;
+				}
 			}
 		}
 	}
@@ -175,7 +187,7 @@ footer
 	padding-top: 1em;
 	padding-bottom: 2em;
 	width: 100%;
-	max-width: 960px;
+	max-width: $maxWidth;
 }
 
 .mainButton
@@ -244,7 +256,9 @@ footer
 
 .sideBox
 {
+
 	width: 90%;
+	color: $mainColor;
 	margin: 0 auto;
 	border: 2px solid $mainColor;
 	@include box-shadow($shadowColor 2px 2px 5px);
@@ -252,7 +266,12 @@ footer
 	@include filter-gradient(#d2d5d9, #d2d5d9, vertical); // IE6-9
 	@include background-image(linear-gradient(top, rgba(210,213,217,1) 0%,rgba(210,218,224,1) 51%,rgba(210,213,217,1) 100%));
 	
-	.button, p
+	p
+	{
+		margin: 1em;
+	}
+
+	.button
 	{
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -264,31 +283,60 @@ footer
 
 	footer
 	{
-		#address
+		width: 100%;
+		float: left;
+		#footerContent
 		{
-			width: 33%;
-		}
+			width: 100%;
+			max-width: $maxWidth;
+			text-align: justify;
+			-ms-text-justify: distribute-all-lines;
+			text-justify: distrubute-all-lines;
 
-		#contact
-		{
-			width: 33%;
+			&:after
+			{
+				content: '';
+				width:100%;
+				display:inline-block;
+				font-size: 0;
+				line-height: 0;
+			}
 		}
+		.bottomItem
+		{
+			width: 25%;
+			vertical-align: top;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
 
-		#phone
-		{
-			width: 33%;
+			&:last-child
+			{
+				text-align: right;
+			}
 		}
+	}
+
+	.mainButton
+	{
+		width: 100%;
+	}
+
+	.sideBox
+	{
+		width: 100%;
 	}
 
 	#rightSide
 	{
-		width: 35%;
+		width: 29%;
 		float: right;
+		margin-left: .5em;
 	}
 
 	#mainImage
 	{
-		width: 60%;
+		width: 69%;
 		float: left;
 	}
 
@@ -300,7 +348,7 @@ footer
 	#headContainer
 	{
 		width: 100%;
-		max-width: 960px;
+		max-width: $maxWidth;
 		margin: 0px auto;
 	}
 
